@@ -53,6 +53,27 @@
                 클래스명 한칸띄어쓰기로 여러 클래스명부여가능
             </td>
         </tr>
+        <tr>
+            <td>중복선택자</td>
+            <td>,</td>
+            <td>여러개의 선택자를 나열해서 사용할수 있다.</td>
+        </tr>
+        <tr>
+            <td>중복선택자</td>
+            <td>붙여쓰기(태그.클래스명)</td>
+            <td>지정된태그중 해당 클래스이름만 부름</td>
+        </tr>
+        <tr>
+            <td>후손선택자</td>
+            <td>선택자 선택자 </td>
+            <td>부모자 내부에 있는 요소를 모두 부른다.</td>
+        </tr>
+
+        <tr>
+            <td>자손선택자</td>
+            <td>부모자>자손자</td>
+            <td>다이렉트 자손자에 한해서 설정가능</td>
+        </tr>
 
     </table>
 
@@ -61,7 +82,24 @@
     <div id="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quidem exercitationem harum eius quae minima asperiores quaerat, hic, molestiae dignissimos autem aut pariatur totam saepe possimus numquam ipsum itaque rerum!</div>
     <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus molestiae odit provident sapiente itaque in reprehenderit vel soluta distinctio numquam placeat error, aliquam commodi magni repellendus ex. Ab, adipisci fuga?</div>
     <div class="box red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, iure officiis. Quasi, culpa modi. Excepturi quo cupiditate id sit natus labore. Totam ad commodi eaque voluptas modi quis sed explicabo!</div>
+    <p class="red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum ab quasi at. Natus, voluptates ipsam repellendus eaque itaque placeat, ipsa, reiciendis sequi quaerat numquam tenetur maiores. Similique facilis suscipit voluptatum?</p>
+    
+    <div class="list">
+        <ul>
+            <li>
+                <em>menu1</em>
+            </li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+        <em>자손자에 대한 정의</em>
+    </div>
+
+
+
     <style>
+        body {margin-bottom: 200px;}
         * {font-size: 18px;}
 
         h1 {font-size: 30px;}
@@ -75,6 +113,17 @@
             color: yellow;}
         .box {padding: 10px;}
         .red {color: red;}
+        p.red {text-decoration: underline;}
+
+
+        .list em { font-size: 30px;}
+        .list li {color: blue;}
+        .list ul {background-color: aquamarine;}
+    
+        /* 자손자선택법 */
+
+        .list>ul>li>em {font-style: normal;}
+        .list>em {color: green;}
     </style>
 
     
