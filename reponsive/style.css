@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* 전체설정 */
+
+* {margin: 0;
+    padding:0;}
+
+ul {list-style: none;}
+a {color: #333;
+    text-decoration: none;
+}
+img {vertical-align: top;}
+
+body {font-family: '나눔고딕';}
+
+/* 미디어쿼리구간*/
+
+
+/* 모바일용 */
+/* 기본용 */
+
+#wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#wrap section {
+
+    box-sizing: border-box;
+}
+
+
+/* 태블릿용 */
+@media (min-width:768px) {
+    /* 기본설정 */
+    #wrap {flex-flow: row wrap;}
+
+
+}
+
+/* 웹용 */
+@media (min-width:1024px) {
+
+    /* 기본설정 */
+     #wrap {position: relative;
+    width: 90%;}
+
+}
+
+
+
+

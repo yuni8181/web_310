@@ -1,0 +1,22 @@
+/*  언어설정 */
+@charset "utf-8";
+
+/*박스 2-1 ,2-2 의 가로정렬  */
+.box2-1 {float: left;
+        width: 50%;}
+.box2-2 {float: left;
+    width: 50%;}
+.box2::after {content: "";
+            clear: both;
+            display: block;}
+
+/* 박스 4-1, 4-2,4-3 의 가로정렬 */
+.box4-1 {float: left;
+        width: 20%;}
+.box4-2 {float: left;
+        width: 60%;}
+.box4-3 {float: left;
+        width: 20%;}
+.box4:after {content: "";
+            clear: both;
+            display: block;}

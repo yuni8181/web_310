@@ -1,0 +1,15 @@
+/* 언어설정 */
+@charset "UTF-8";
+/* 박스A플렉스정렬 */
+.boxA {display: flex;}
+.box1 {width: 20%;}
+.box2 {width: 80%;}
+
+/* 박스C플렉스정렬 */
+.boxC {display: flex;}
+.boxC>div {flex: 1;}
+
+/* 박스D플렉스정렬 */
+.boxD {display: flex;}
+.box6 {width: 20%;}
+.box7 {width: 80%;}

@@ -1,0 +1,91 @@
+/* 언어설정 */
+@charset "UTF-8";
+
+/* clearBox정렬방식 */
+/* 박스 A와 박스A-2 의 가로정렬
+.boxA {width: 20%;
+    float: left;}
+.boxA-2 {width: 80%;
+    float: left;}
+
+.wrap:after {content: "";
+            clear: both;
+            display: block;}
+
+           /* 박스3과 박스4와 박스5의 가로정렬
+
+           .box3 {float: left;
+                width: 33.3333%;}
+           .box4 {float: left;
+                width: 33.3333%;}
+           .box5 {float: left;
+                width: 33.3333%;}
+            .boxC:after {content: "";
+                clear: both;
+                display: block;}
+
+    /*박스6과 박스7 의 가로정렬  
+
+    .box6 {width: 80%;
+        float: left;}
+    .box7 {width: 20%;
+        float: left;}
+    .boxD:after {content: "";
+            clear: both;
+            display: block;}
+
+            ---------------------------------------------------   */
+
+
+            /* 플렉스정렬방식 */
+
+
+
+@media (min-width:320px){
+    /* 박스 D플렉스정렬 */
+.boxD{display: flex;}
+.box6 {width: 80%;}
+.box7 {width: 20%;}
+}
+
+@media (min-width:600px){
+
+    /* 박스C플렉스정렬 */
+.boxC {display: flex;
+    height: 1200px;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    /* justify-content: space-around; */
+    align-items:center;
+    align-content:center;
+
+}
+.box3 {width: 50%;
+        order: 3;}
+.box4 {width: 50%;
+order: 0;}
+.box5 {width: 50%;
+order: 0;}
+
+.box5 {align-self: flex-end;}
+
+
+
+}
+
+
+@media (min-width:960px){
+
+
+    /* wrap 플렉스정렬 */
+.wrap {display: flex;}
+.boxA {width: 20%;
+    flex-wrap: wrap;
+        display: flex;
+    flex-direction: column;
+align-content:space-around;
+}
+.boxA>div {
+            width: 100%;}
+.boxA-2 {width: 80%;}

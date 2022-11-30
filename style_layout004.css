@@ -1,0 +1,36 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* 박스1과 박스2의 가로정렬 */
+
+.box1 {float: left;
+        width: 20%;}
+.box2 {float: left;
+        width: 80%;}
+.boxA:after {content: "";
+            clear: both;
+            display: block;}
+
+/* 박스B설정 */
+
+/* 박스3과 박스4와 박스5의 가로정렬 */
+.box3 {float: left;
+        width: 33.3333%;}
+.box4 {float: left;
+        width: 33.3333%;}
+.box5 {float: left;
+        width: 33.3333%;}
+
+.boxC::after {content: "";
+        clear: both;
+        display: block;}
+
+/* 박스6과 박스7의 가로정렬 */
+
+.box6 {float: left;
+        width: 20%;}
+.box7 {float: left;
+        width: 80%;}
+.boxD:after {content: "";
+            clear: both;
+        display: block;}
