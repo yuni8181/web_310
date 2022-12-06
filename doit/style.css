@@ -59,7 +59,8 @@
                 
 /* 인기글영역 */
 .popular_post_section {background-color: #d76817;
-                width: 30%;}
+                width: 30%;
+                height: 270px;}
 /* 배너영역 */
 .banner_section {width: 23%;
                 display: flex;
