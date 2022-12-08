@@ -216,6 +216,9 @@ padding-bottom: 30px;}
     padding-bottom: 15px;}
 
 /* 좌우간격설정 */
+.box1,.box2, .boxA, .box5 {padding-left: 10px;
+    padding-right: 10px;}
+
 
 
 
@@ -223,7 +226,46 @@ padding-bottom: 30px;}
 
 /* 미디어쿼리구간###############################################  */
 
-/* 모바일구간 */
+/* 모바일구간1 */
+/*599px 이하일때 ###########*/
+@media (max-width:599px){
+
+    /* sns 설정 */
+
+    .sns span {text-indent: -9999px;
+               display: inline-block; }
+    
+/* 관련기사 */
+.relation ul li {float: left;
+    width: 50%;}
+
+.relation ul li:nth-child(odd) {clear: both;}
+/* odd - 홀수 / even -짝수  */
+
+
+}
+
+/* 모바일구간2 */
+/* 600px 이상 767px 이하일때 ######## */
+@media (min-width:600px) and (max-width:767px){
+
+
+    /* 박스4-1 과 박스 4-2의 가로정렬 */
+
+    .box4:after {content: "";
+                display: block;
+            clear: both;}
+    .box4-1 {float: left;
+            width: 49%;}
+    .box4-2 {float: right;
+            width: 49%;}
+
+
+
+
+
+}
+
 /* 태블릿구간 */
 /* 768px 이상일때 ##################### */
 @media (min-width:768px){
